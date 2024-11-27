@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "575164706711",
+    "project_id": "mobdevemco-95b78",
+    "storage_bucket": "mobdevemco-95b78.firebasestorage.app",
+    "firebase_url": "https://mobdevemco-95b78-default-rtdb.asia-southeast1.firebasedatabase.app/"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575164706711:android:3938753e3d5984dd601ed2",
+        "android_client_info": {
+          "package_name": "com.mobdeve.salonpas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlLAAByfwRwZz0kEHquh2bc9-Ndb7ZIJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

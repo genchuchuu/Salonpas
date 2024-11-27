@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#F8F7F9</color>
+    <color name="mbg">#C4E6D2</color>
+
+    <color name="accentPrimary">#73D898</color>
+    <color name="accentSecondary">#299D45</color>
+    <color name="accentTertiary">#26547C</color>
+    <color name="mainFont">#020887</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="edittext_background">#98FF98</color>
+</resources>

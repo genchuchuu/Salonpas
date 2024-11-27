@@ -1,0 +1,199 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/accentPrimary"
+    android:padding="24dp"
+    tools:context=".EditProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/circular_shape"
+                android:contentDescription="Default Profile Image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/titleEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:text="Edit Profile"
+                android:textAlignment="center"
+                android:textColor="#020887"
+                android:textSize="32sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileImage" />
+
+            <TextView
+                android:id="@+id/labelFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="First Name:"
+                android:textColor="#020887"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleEditProfile" />
+
+            <EditText
+                android:id="@+id/editFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Enter your first name"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColorHint="#A0A0A0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/labelFirstName"
+                app:layout_constraintTop_toBottomOf="@id/labelFirstName" />
+
+            <TextView
+                android:id="@+id/labelLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Last Name:"
+                android:textColor="#020887"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editFirstName" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Enter your last name"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColorHint="#A0A0A0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/labelLastName"
+                app:layout_constraintTop_toBottomOf="@id/labelLastName" />
+
+            <TextView
+                android:id="@+id/labelBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Birthday:"
+                android:textColor="#020887"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editLastName" />
+
+            <EditText
+                android:id="@+id/editBirthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="DD/MM/YYYY"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColorHint="#A0A0A0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/labelBirthday"
+                app:layout_constraintTop_toBottomOf="@id/labelBirthday" />
+
+            <TextView
+                android:id="@+id/labelContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Contact:"
+                android:textColor="#020887"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editBirthday" />
+
+            <EditText
+                android:id="@+id/editContact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Enter contact number"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textColorHint="#A0A0A0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/labelContact"
+                app:layout_constraintTop_toBottomOf="@id/labelContact" />
+
+            <Button
+                android:id="@+id/saveProfileButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#020887"
+                android:minHeight="48dp"
+                android:text="Save Changes"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editContact" />
+
+            <Button
+                android:id="@+id/cancelProfileButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FF0000"
+                android:minHeight="48dp"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/saveProfileButton" />
+
+            <Button
+                android:id="@+id/deleteProfileButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#FF0000"
+                android:minHeight="48dp"
+                android:text="Delete Profile"
+                android:textColor="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cancelProfileButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

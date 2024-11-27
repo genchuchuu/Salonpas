@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Salonpas</string>
+    <string-array name="gender_options">
+        <item>Select Gender</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Prefer not to say</item>
+    </string-array>
+</resources>
